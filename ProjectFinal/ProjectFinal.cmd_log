@@ -1,0 +1,36 @@
+xst -intstyle ise -ifn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.xst" -ofn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 ProjectFinal.ngc ProjectFinal.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o ProjectFinal_map.ncd ProjectFinal.ngd ProjectFinal.pcf 
+par -w -intstyle ise -ol high -t 1 ProjectFinal_map.ncd ProjectFinal.ncd ProjectFinal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ProjectFinal.twx ProjectFinal.ncd -o ProjectFinal.twr ProjectFinal.pcf 
+bitgen -intstyle ise -f ProjectFinal.ut ProjectFinal.ncd 
+xst -intstyle ise -ifn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.xst" -ofn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectFinal.ucf -p xc3s200-pq208-4 ProjectFinal.ngc ProjectFinal.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o ProjectFinal_map.ncd ProjectFinal.ngd ProjectFinal.pcf 
+par -w -intstyle ise -ol high -t 1 ProjectFinal_map.ncd ProjectFinal.ncd ProjectFinal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ProjectFinal.twx ProjectFinal.ncd -o ProjectFinal.twr ProjectFinal.pcf -ucf ProjectFinal.ucf 
+bitgen -intstyle ise -f ProjectFinal.ut ProjectFinal.ncd 
+xst -intstyle ise -ifn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.xst" -ofn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectFinal.ucf -p xc3s200-pq208-4 ProjectFinal.ngc ProjectFinal.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o ProjectFinal_map.ncd ProjectFinal.ngd ProjectFinal.pcf 
+par -w -intstyle ise -ol high -t 1 ProjectFinal_map.ncd ProjectFinal.ncd ProjectFinal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ProjectFinal.twx ProjectFinal.ncd -o ProjectFinal.twr ProjectFinal.pcf -ucf ProjectFinal.ucf 
+bitgen -intstyle ise -f ProjectFinal.ut ProjectFinal.ncd 
+xst -intstyle ise -ifn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.xst" -ofn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectFinal.ucf -p xc3s200-pq208-4 ProjectFinal.ngc ProjectFinal.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o ProjectFinal_map.ncd ProjectFinal.ngd ProjectFinal.pcf 
+par -w -intstyle ise -ol high -t 1 ProjectFinal_map.ncd ProjectFinal.ncd ProjectFinal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ProjectFinal.twx ProjectFinal.ncd -o ProjectFinal.twr ProjectFinal.pcf -ucf ProjectFinal.ucf 
+bitgen -intstyle ise -f ProjectFinal.ut ProjectFinal.ncd 
+xst -intstyle ise -ifn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.xst" -ofn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectFinal.ucf -p xc3s200-pq208-4 ProjectFinal.ngc ProjectFinal.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o ProjectFinal_map.ncd ProjectFinal.ngd ProjectFinal.pcf 
+par -w -intstyle ise -ol high -t 1 ProjectFinal_map.ncd ProjectFinal.ncd ProjectFinal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ProjectFinal.twx ProjectFinal.ncd -o ProjectFinal.twr ProjectFinal.pcf -ucf ProjectFinal.ucf 
+bitgen -intstyle ise -f ProjectFinal.ut ProjectFinal.ncd 
+xst -intstyle ise -ifn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.xst" -ofn "C:/Users/DanMi/Desktop/Xilinx_ISE_DS_Win_14.7_1015_1/q/ProjectFinal/ProjectFinal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ProjectFinal.ucf -p xc3s200-pq208-4 ProjectFinal.ngc ProjectFinal.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o ProjectFinal_map.ncd ProjectFinal.ngd ProjectFinal.pcf 
+par -w -intstyle ise -ol high -t 1 ProjectFinal_map.ncd ProjectFinal.ncd ProjectFinal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ProjectFinal.twx ProjectFinal.ncd -o ProjectFinal.twr ProjectFinal.pcf -ucf ProjectFinal.ucf 
+bitgen -intstyle ise -f ProjectFinal.ut ProjectFinal.ncd 

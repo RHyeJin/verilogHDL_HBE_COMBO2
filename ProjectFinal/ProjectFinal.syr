@@ -1,0 +1,655 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.45 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.45 secs
+ 
+--> Reading design: ProjectFinal.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ProjectFinal.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ProjectFinal"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-pq208
+
+---- Source Options
+Top Module Name                    : ProjectFinal
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ProjectFinal_SEP.V" in library work
+Compiling verilog file "ProjectFinal_SEG.V" in library work
+Module <ProjectFinal_SEP> compiled
+Compiling verilog file "ProjectFinal.V" in library work
+Module <ProjectFinal_SEG> compiled
+Module <ProjectFinal> compiled
+No errors in compilation
+Analysis of file <"ProjectFinal.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ProjectFinal> in library <work> with parameters.
+	DELAY = "00000"
+	DELAY_T_case0 = "00110"
+	DELAY_T_case1 = "01001"
+	DELAY_T_case2 = "01100"
+	DELAY_T_case3 = "01111"
+	DELAY_T_case4 = "10010"
+	DELAY_T_case5 = "10101"
+	DISP_ONOFF = "00011"
+	ENTRY_MODE = "00010"
+	FUNCTION_SET = "00001"
+	Line1_case0 = "00100"
+	Line1_case1 = "00111"
+	Line1_case2 = "01010"
+	Line1_case3 = "01101"
+	Line1_case4 = "10000"
+	Line1_case5 = "10011"
+	Line2_case0 = "00101"
+	Line2_case1 = "01000"
+	Line2_case2 = "01011"
+	Line2_case3 = "01110"
+	Line2_case4 = "10001"
+	Line2_case5 = "10100"
+
+Analyzing hierarchy for module <ProjectFinal_SEP> in library <work>.
+
+Analyzing hierarchy for module <ProjectFinal_SEG> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ProjectFinal>.
+	DELAY = 5'b00000
+	DELAY_T_case0 = 5'b00110
+	DELAY_T_case1 = 5'b01001
+	DELAY_T_case2 = 5'b01100
+	DELAY_T_case3 = 5'b01111
+	DELAY_T_case4 = 5'b10010
+	DELAY_T_case5 = 5'b10101
+	DISP_ONOFF = 5'b00011
+	ENTRY_MODE = 5'b00010
+	FUNCTION_SET = 5'b00001
+	Line1_case0 = 5'b00100
+	Line1_case1 = 5'b00111
+	Line1_case2 = 5'b01010
+	Line1_case3 = 5'b01101
+	Line1_case4 = 5'b10000
+	Line1_case5 = 5'b10011
+	Line2_case0 = 5'b00101
+	Line2_case1 = 5'b01000
+	Line2_case2 = 5'b01011
+	Line2_case3 = 5'b01110
+	Line2_case4 = 5'b10001
+	Line2_case5 = 5'b10100
+Module <ProjectFinal> is correct for synthesis.
+ 
+Analyzing module <ProjectFinal_SEP> in library <work>.
+Module <ProjectFinal_SEP> is correct for synthesis.
+ 
+Analyzing module <ProjectFinal_SEG> in library <work>.
+Module <ProjectFinal_SEG> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ProjectFinal_SEP>.
+    Related source file is "ProjectFinal_SEP.V".
+    Found 4-bit subtractor for signal <SEP1$share0000>.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0000> created at line 8.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0001> created at line 13.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0002> created at line 18.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0003> created at line 23.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0004> created at line 28.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0005> created at line 33.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0006> created at line 38.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0007> created at line 43.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0008> created at line 48.
+    Found 7-bit comparator less for signal <SEP10$cmp_lt0009> created at line 53.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+Unit <ProjectFinal_SEP> synthesized.
+
+
+Synthesizing Unit <ProjectFinal_SEG>.
+    Related source file is "ProjectFinal_SEG.V".
+Unit <ProjectFinal_SEG> synthesized.
+
+
+Synthesizing Unit <ProjectFinal>.
+    Related source file is "ProjectFinal.V".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 22                                             |
+    | Transitions        | 110                                            |
+    | Inputs             | 8                                              |
+    | Outputs            | 29                                             |
+    | Clock              | clk_100Hz                 (rising_edge)        |
+    | Clock enable       | STOP                      (negative)           |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4x4-bit ROM for signal <SEG_COM$mux0000> created at line 125.
+    Found 8-bit register for signal <LCD_DATA>.
+    Found 1-bit register for signal <LCD_RS>.
+    Found 1-bit register for signal <LCD_RW>.
+    Found 1-bit register for signal <Light1_Green>.
+    Found 1-bit register for signal <Light1_Red>.
+    Found 1-bit register for signal <Light2_Green>.
+    Found 1-bit register for signal <Light2_Red>.
+    Found 1-bit register for signal <Light3_Green>.
+    Found 1-bit register for signal <Light3_Red>.
+    Found 1-bit register for signal <PIEZO>.
+    Found 4-bit register for signal <SEG_COM>.
+    Found 8-bit register for signal <SEG_DATA>.
+    Found 1-bit register for signal <clk_100Hz>.
+    Found 3-bit comparator greatequal for signal <clk_100Hz$cmp_ge0000> created at line 309.
+    Found 9-bit register for signal <CNT>.
+    Found 9-bit adder for signal <CNT$share0000> created at line 390.
+    Found 7-bit up counter for signal <cnt1>.
+    Found 3-bit up counter for signal <CNT_100Hz>.
+    Found 2-bit register for signal <CNT_PIEZO>.
+    Found 2-bit comparator greatequal for signal <CNT_PIEZO$cmp_ge0000> created at line 61.
+    Found 2-bit comparator greatequal for signal <CNT_PIEZO$cmp_ge0001> created at line 66.
+    Found 2-bit comparator greatequal for signal <CNT_PIEZO$cmp_ge0002> created at line 71.
+    Found 2-bit adder for signal <CNT_PIEZO$share0000>.
+    Found 2-bit up counter for signal <CNT_SCAN>.
+    Found 7-bit register for signal <msec>.
+    Found 7-bit subtractor for signal <msec$addsub0000> created at line 337.
+    Found 3-bit register for signal <sec>.
+    Found 3-bit subtractor for signal <sec$addsub0000> created at line 336.
+    Found 8-bit 4-to-1 multiplexer for signal <SEG_DATA$mux0001> created at line 175.
+    Found 8-bit 4-to-1 multiplexer for signal <SEG_DATA$mux0002> created at line 200.
+    Found 9-bit comparator greatequal for signal <state$cmp_ge0000> created at line 357.
+    Found 9-bit comparator greatequal for signal <state$cmp_ge0001> created at line 358.
+    Found 9-bit comparator greatequal for signal <state$cmp_ge0002> created at line 361.
+    Found 9-bit comparator greatequal for signal <state$cmp_ge0003> created at line 363.
+    Found 9-bit comparator greatequal for signal <state$cmp_ge0004> created at line 366.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+	inferred  51 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <ProjectFinal> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 5
+ 2-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 4-bit subtractor                                      : 1
+ 7-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 3
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 17
+ 1-bit register                                        : 10
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 2
+ 9-bit register                                        : 1
+# Comparators                                          : 19
+ 2-bit comparator greatequal                           : 3
+ 3-bit comparator greatequal                           : 1
+ 7-bit comparator less                                 : 10
+ 9-bit comparator greatequal                           : 5
+# Multiplexers                                         : 2
+ 8-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:22]> with one-hot encoding.
+---------------------------------
+ State | Encoding
+---------------------------------
+ 00000 | 0000000000000000000001
+ 00001 | 0000000000000000010000
+ 00010 | 0000000000000001000000
+ 00011 | 0000000000000000100000
+ 00100 | 0000000000000000000010
+ 00101 | 0000000000000010000000
+ 00110 | 0000000000000100000000
+ 00111 | 0000000000001000000000
+ 01000 | 0000000000010000000000
+ 01001 | 0000000000100000000000
+ 01010 | 0000000000000000000100
+ 01011 | 0000000001000000000000
+ 01100 | 0000000010000000000000
+ 01101 | 0000000100000000000000
+ 01110 | 0000001000000000000000
+ 01111 | 0000010000000000000000
+ 10000 | 0000000000000000001000
+ 10001 | 0000100000000000000000
+ 10010 | 0001000000000000000000
+ 10011 | 0010000000000000000000
+ 10100 | 0100000000000000000000
+ 10101 | 1000000000000000000000
+---------------------------------
+
+Synthesizing (advanced) Unit <ProjectFinal>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_SEG_COM_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <ProjectFinal> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 5
+ 2-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 4-bit subtractor                                      : 1
+ 7-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 3
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 51
+ Flip-Flops                                            : 51
+# Comparators                                          : 19
+ 2-bit comparator greatequal                           : 3
+ 3-bit comparator greatequal                           : 1
+ 7-bit comparator less                                 : 10
+ 9-bit comparator greatequal                           : 5
+# Multiplexers                                         : 2
+ 8-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ProjectFinal> ...
+
+Optimizing unit <ProjectFinal_SEP> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ProjectFinal, actual ratio is 10.
+FlipFlop CNT_0 has been replicated 2 time(s)
+FlipFlop CNT_1 has been replicated 2 time(s)
+FlipFlop CNT_2 has been replicated 2 time(s)
+FlipFlop CNT_3 has been replicated 2 time(s)
+FlipFlop CNT_4 has been replicated 2 time(s)
+FlipFlop state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop state_FSM_FFd5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 97
+ Flip-Flops                                            : 97
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ProjectFinal.ngr
+Top Level Output File Name         : ProjectFinal
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 40
+
+Cell Usage :
+# BELS                             : 436
+#      INV                         : 6
+#      LUT2                        : 27
+#      LUT2_D                      : 10
+#      LUT2_L                      : 3
+#      LUT3                        : 46
+#      LUT3_D                      : 4
+#      LUT3_L                      : 9
+#      LUT4                        : 227
+#      LUT4_D                      : 20
+#      LUT4_L                      : 42
+#      MUXF5                       : 37
+#      MUXF6                       : 5
+# FlipFlops/Latches                : 97
+#      FDE                         : 12
+#      FDR                         : 3
+#      FDRE                        : 68
+#      FDSE                        : 14
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 39
+#      IBUF                        : 9
+#      OBUF                        : 30
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-4 
+
+ Number of Slices:                      203  out of   1920    10%  
+ Number of Slice Flip Flops:             97  out of   3840     2%  
+ Number of 4 input LUTs:                394  out of   3840    10%  
+ Number of IOs:                          40
+ Number of bonded IOBs:                  40  out of    141    28%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 21    |
+clk_100Hz1                         | BUFG                   | 76    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.468ns (Maximum Frequency: 105.619MHz)
+   Minimum input arrival time before clock: 5.361ns
+   Maximum output required time after clock: 7.271ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.410ns (frequency: 184.843MHz)
+  Total number of paths / destination ports: 61 / 25
+-------------------------------------------------------------------------
+Delay:               5.410ns (Levels of Logic = 3)
+  Source:            CNT_SCAN_1 (FF)
+  Destination:       SEG_DATA_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: CNT_SCAN_1 to SEG_DATA_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            14   0.720   1.526  CNT_SCAN_1 (CNT_SCAN_1)
+     LUT3:I0->O            1   0.551   1.140  SEG_DATA_mux0000<6>134 (SEG_DATA_mux0000<6>134)
+     LUT4_L:I0->LO         1   0.551   0.168  SEG_DATA_mux0000<6>139 (SEG_DATA_mux0000<6>139)
+     LUT3:I2->O            1   0.551   0.000  SEG_DATA_mux0000<6>200 (SEG_DATA_mux0000<6>)
+     FDE:D                     0.203          SEG_DATA_1
+    ----------------------------------------
+    Total                      5.410ns (2.576ns logic, 2.834ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100Hz1'
+  Clock period: 9.468ns (frequency: 105.619MHz)
+  Total number of paths / destination ports: 3331 / 86
+-------------------------------------------------------------------------
+Delay:               9.468ns (Levels of Logic = 6)
+  Source:            state_FSM_FFd12 (FF)
+  Destination:       LCD_DATA_1 (FF)
+  Source Clock:      clk_100Hz1 rising
+  Destination Clock: clk_100Hz1 rising
+
+  Data Path: state_FSM_FFd12 to LCD_DATA_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            22   0.720   1.795  state_FSM_FFd12 (state_FSM_FFd12)
+     LUT3:I1->O            1   0.551   0.996  LCD_DATA_mux0000<6>1210 (LCD_DATA_mux0000<6>1210)
+     LUT4:I1->O            1   0.551   0.000  LCD_DATA_mux0000<6>1218_F (N352)
+     MUXF5:I0->O           4   0.360   0.943  LCD_DATA_mux0000<6>1218 (LCD_DATA_mux0000<6>1218)
+     LUT4:I3->O            1   0.551   0.827  LCD_DATA_mux0000<6>15_SW1 (N250)
+     LUT4:I3->O            1   0.551   0.869  LCD_DATA_mux0000<6>109 (LCD_DATA_mux0000<6>109)
+     LUT4:I2->O            1   0.551   0.000  LCD_DATA_mux0000<6>134 (LCD_DATA_mux0000<6>)
+     FDRE:D                    0.203          LCD_DATA_1
+    ----------------------------------------
+    Total                      9.468ns (4.038ns logic, 5.430ns route)
+                                       (42.6% logic, 57.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 69 / 34
+-------------------------------------------------------------------------
+Offset:              5.361ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       CNT_PIEZO_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to CNT_PIEZO_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.821   0.921  rst_IBUF (rst_IBUF)
+     INV:I->O             65   0.551   2.042  rst_inv1_INV_0 (rst_inv)
+     FDRE:R                    1.026          CNT_PIEZO_0
+    ----------------------------------------
+    Total                      5.361ns (2.398ns logic, 2.963ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100Hz1'
+  Total number of paths / destination ports: 253 / 182
+-------------------------------------------------------------------------
+Offset:              5.361ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       sec_0 (FF)
+  Destination Clock: clk_100Hz1 rising
+
+  Data Path: rst to sec_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.821   0.921  rst_IBUF (rst_IBUF)
+     INV:I->O             65   0.551   2.042  rst_inv1_INV_0 (rst_inv)
+     FDSE:S                    1.026          Light2_Red
+    ----------------------------------------
+    Total                      5.361ns (2.398ns logic, 2.963ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              7.271ns (Levels of Logic = 1)
+  Source:            clk_100Hz (FF)
+  Destination:       LCD_E (PAD)
+  Source Clock:      clk rising
+
+  Data Path: clk_100Hz to LCD_E
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.720   0.907  clk_100Hz (clk_100Hz1)
+     OBUF:I->O                 5.644          LCD_E_OBUF (LCD_E)
+    ----------------------------------------
+    Total                      7.271ns (6.364ns logic, 0.907ns route)
+                                       (87.5% logic, 12.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100Hz1'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              7.271ns (Levels of Logic = 1)
+  Source:            Light3_Green (FF)
+  Destination:       Light3_Green (PAD)
+  Source Clock:      clk_100Hz1 rising
+
+  Data Path: Light3_Green to Light3_Green
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             3   0.720   0.907  Light3_Green (Light3_Green_OBUF)
+     OBUF:I->O                 5.644          Light3_Green_OBUF (Light3_Green)
+    ----------------------------------------
+    Total                      7.271ns (6.364ns logic, 0.907ns route)
+                                       (87.5% logic, 12.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.64 secs
+ 
+--> 
+
+Total memory usage is 4521476 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

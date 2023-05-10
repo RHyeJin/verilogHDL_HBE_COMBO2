@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\DanMi\Desktop\Xilinx_ISE_DS_Win_14.7_1015_1\q\ProjectFinal\ProjectFinal.ncd
+OUTFILE=C:\Users\DanMi\Desktop\Xilinx_ISE_DS_Win_14.7_1015_1\q\ProjectFinal\ProjectFinal.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=C:\Users\DanMi\Desktop\Xilinx_ISE_DS_Win_14.7_1015_1\q\ProjectFinal
+LICENSE=WebPack
+USER_INFO=211798996_0_0_633

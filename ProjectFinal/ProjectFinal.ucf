@@ -1,0 +1,49 @@
+
+#PROJECT.ucf
+NET "clk" LOC = "P76";
+NET "rst" LOC = "P57";
+
+NET "Man_Button[0]" LOC = "P63";
+NET "Man_Button[1]" LOC = "P67";
+NET "Man_Button[2]" LOC = "P65";
+NET "LCD_Stop" LOC = "P34";
+NET "SEG_Stop" LOC = "P35";
+NET "LED_Stop" LOC = "P37";
+NET "PIEZO_Stop" LOC = "P36";
+NET "STOP" LOC = "P42";
+
+NET "Light1_Red" LOC = "P191";
+NET "Light1_Green" LOC = "P190";
+NET "Light2_Red" LOC = "P200";
+NET "Light2_Green" LOC = "P199";
+NET "Light3_Red" LOC = "P15";
+NET "Light3_Green" LOC = "P16";
+
+NET "SEG_COM[3]" LOC = "P18";
+NET "SEG_COM[2]" LOC = "P19";
+NET "SEG_COM[1]" LOC = "P20";
+NET "SEG_COM[0]" LOC = "P21";
+
+NET "SEG_DATA[7]" LOC = "P22";
+NET "SEG_DATA[6]" LOC = "P24";
+NET "SEG_DATA[5]" LOC = "P26";
+NET "SEG_DATA[4]" LOC = "P27";
+NET "SEG_DATA[3]" LOC = "P28";
+NET "SEG_DATA[2]" LOC = "P29";
+NET "SEG_DATA[1]" LOC = "P31";
+NET "SEG_DATA[0]" LOC = "P33";
+
+NET "LCD_RS" LOC = "P156";
+NET "LCD_RW" LOC = "P155";
+NET "LCD_E" LOC = "P154";
+
+NET "LCD_DATA[7]" LOC = "P143";
+NET "LCD_DATA[6]" LOC = "P144";
+NET "LCD_DATA[5]" LOC = "P146";
+NET "LCD_DATA[4]" LOC = "P147";
+NET "LCD_DATA[3]" LOC = "P148";
+NET "LCD_DATA[2]" LOC = "P149";
+NET "LCD_DATA[1]" LOC = "P150";
+NET "LCD_DATA[0]" LOC = "P152";
+
+NET "PIEZO" LOC = "P51";
